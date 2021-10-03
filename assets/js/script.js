@@ -1,6 +1,6 @@
 
 
-//search button ,input funtion
+//search button ,input function
 function myFunction(){
 
 $("#searchButton").on("click", function () {
@@ -10,13 +10,15 @@ weatherFunction(searchTerm);
 weatherForecast(searchTerm);
 });
 
-$("#searchButton").keypress(function (event) {
-    var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode === 13) {
-      weatherFunction(searchTerm);
-      weatherForecast(searchTerm);
-    }
-  });
+  var history = JSON.parse(localStorage.getItem("history")) || [];
+
+
+
+
+
+
+
+
 
 
 
