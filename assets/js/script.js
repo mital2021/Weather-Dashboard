@@ -10,7 +10,13 @@ weatherFunction(searchTerm);
 weatherForecast(searchTerm);
 });
 
-
+$("#searchButton").keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode === 13) {
+      weatherFunction(searchTerm);
+      weatherForecast(searchTerm);
+    }
+  });
 
 
 
