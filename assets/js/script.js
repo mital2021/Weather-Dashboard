@@ -6,8 +6,8 @@ function myFunction(){
 $("#searchButton").on("click", function () {
 var searchTerm = $("#searchValue").val();
 $("#searchValue").val("");
- weatherFunction=(searchTerm);
- weatherForecast=(searchTerm);
+ weatherFunction(searchTerm);
+ weatherForecast(searchTerm);
 });
 
 
@@ -32,10 +32,20 @@ $("#searchValue").val("");
     weatherForecast($(this).text());
   });
 
+  function weatherFunction(searchTerm){
+      fetch(
+        "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=cb4df67a69d2950ccf15e89555ac99d4"
+        )
+        .then(function(response){
+            return response.json()
+        })
+
+        .then(function(response) {
+            console.log(response.data[0]);
+  });
+  }
 
 
-
-  
 
 
 
