@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="container-fluid text-center text-white bg-light p-2">
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-2 ">
+            <h3 class="mt-1">Search for a City</h3> 
+            <div class="form-inline-width ">
+                <input class="form-control" type="text" id="searchValue" /><br>
+                <button class="btn btn-primary" id="searchButton" for="btn-check"><span>Search</span></button>
+            </div>
+      ​
+              <ul class="localStorage"></ul>
+            </aside>
+      ​      <div class="col-lg-9">
+                 <div id="response-container1" class="mt-3"></div>
+                 <div id="response-container2" class="card-deck mt-3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
