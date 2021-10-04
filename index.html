@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--title-->
     <title>Weather Dashboard</title>
 </head>
 <body>
+    <!--header-->
     <header class="container-fluid text-center text-white bg-light p-2">
       <h1>Weather Dashboard</h1>
     </header>
-
+<!--search button and input text-->
     <div class="container-fluid">
         <div class="row">
-            <aside class="col-lg-2 ">
+            <div class="col-lg-2 ">
             <h3 class="mt-1">Search for a City</h3> 
             <div class="form-inline-width ">
                 <input class="form-control" type="text" id="searchValue" /><br>
                 <button class="btn btn-primary" id="searchButton" for="btn-check" >Search</button>
+               
             </div>
-      ​
-              <ul class="listHistory"></ul>
-            </aside>
+    <!--display today weather and 5 day forecast-->
+      <ul class="getHistory"></ul>
+        </div>
       ​      <div class="col-lg-9">
-                 <div id="todayWeather" class="mt-3"></div>
-                 <div id="weekForecast" class="card-deck mt-3"></div>
+                 <div id="today" class="mt-3"></div>
+                 
+                 <br>
+                 <div id="5dayForecast" class="card-deck mt-3"></div>
             </div>
         </div>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
