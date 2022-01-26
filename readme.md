@@ -20,7 +20,7 @@ https://mital2021.github.io/Weather-Dashboard/
 
 # Screenshot of my application
 
-![](./assets/image/weather.jpg)
+![](./assets/image/weather.png)
 
 
 ## Contribution
